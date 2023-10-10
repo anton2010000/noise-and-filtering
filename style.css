@@ -1,0 +1,72 @@
+/* Обнуление стандартных стилей браузера */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Стили для body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 20px 0; /* Добавляем отступ сверху */
+    padding: 0;
+}
+
+/* Стили для контейнера */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Стили для заголовка */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Стили для холстов */
+canvas {
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+/* Стили для кнопок */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для загрузочной области */
+.upload-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.upload-area:hover {
+    background-color: #f0f0f0;
+}

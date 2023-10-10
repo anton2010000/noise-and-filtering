@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB</title>
+</head>
+	 <link href="style.css" rel="stylesheet" type="text/css">
+<body>
+    <input type="file" id="fileInput" accept=".bmp">
+    <div>
+        <canvas id="originalCanvas"></canvas>
+        <canvas id="redCanvas"></canvas>
+        <canvas id="greenCanvas"></canvas>
+        <canvas id="blueCanvas"></canvas>
+    </div> 
+    <button id="addBipolarNoiseButton">Добавить биполярного шума</button>
+    <button id="addUnipolarNoiseButton">Добавить униполярного шума</button>
+    <button id="resetNoiseButton">Сбросить....</button>
+   <button id="applyMidpointFilterButton">Применить фильтр срединной точки</button>
+   <button id="applyGeometricMeanFilterButton">Применить среднегеометрический фильтр</button>
+   <button id="channelSelectionButton">Выделить каналы с униполярным шумом</button>
+    <button id="channelSelectionButton2">Выделить каналы с биполярным шумом</button>
+	<Br>
+	<button id="saveImagesButton">Сохранить изображения</button>
+	<Br>
+ <label for="matrixSize">Размер матрицы:</label>
+    <select id="matrixSize">
+       <option value="3">3x3</option>
+       <option value="5">5x5</option>
+       <option value="7">7x7</option>
+    </select>
+    <script src="script.js"></script>
+</body>
+</html>
